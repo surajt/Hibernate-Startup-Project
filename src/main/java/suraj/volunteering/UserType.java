@@ -20,7 +20,7 @@ public class UserType {
 	
 	private String type;
 	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "usertype")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "userType")
 	private Set<Users> usersRecord = new HashSet<Users>();
 
 	public Set<Users> getUsersRecord() {
